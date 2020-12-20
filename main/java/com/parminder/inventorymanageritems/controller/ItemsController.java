@@ -18,7 +18,7 @@ public class ItemsController {
 
 	@GetMapping("/items")
 	public @ResponseBody List<Item> listItems() {
-		logger.info("Call recieved");
+		logger.info("list recieved");
 		return itemsService.getItems();
 	}
 	@PutMapping("/items")
